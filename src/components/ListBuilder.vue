@@ -149,7 +149,7 @@ const canAdd = computed(() =>
   isFinite(qty.value)
 );
 
-/* ===== helpers para tabla ===== */
+/* ===== helpers para tablas ===== */
 const productsById = computed<Map<ID, Product>>(() => {
   const m = new Map<ID, Product>();
   products.value.forEach((p: any) => m.set(p.id, p));
